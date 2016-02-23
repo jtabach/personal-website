@@ -6,3 +6,21 @@
 body {
 	background: lightblue;
 }
+
+.navbar {
+	height: 90px;
+	background: purple;
+}
+
+.navbar a {
+}
+
+.navbar i {
+	height: 40px;
+}
+
+.splash {
+	background: url('/images/splash.jpeg') no-repeat bottom center;
+	background-size: cover;
+	height: 678px;
+}
