@@ -57,13 +57,67 @@ body {
 .portfolio {
 	margin-top: 40px;
 	background: #ECEFF1;
+	padding: 0;
+}
+
+.portfolio h1 {
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 .portfolio img {
-	height: 300px;
+	height: 200px;
 }
 
 #portfolioWrapper {
 	width: 1024px;
 	margin: 0 auto;
+}
+
+.portCard {
+	width: 330px;
+	margin: 0 0 0 13px;
+	background: white;
+	display: inline-block;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 2px #ccc;
+}
+
+.portCard img {
+	width: 330px;
+	border-top-right-radius:  2px;
+	border-top-left-radius:  2px;
+}
+
+.portCard h3,
+.portCard p {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+.portCard .buttons {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.portCard .md-button {
+	display: inline-block;
+	background-color: #607D8B;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.portCard .md-button:hover {
+	background-color: #455A64;
+	color: white;
+}
+
+.firstCard {
+	margin-left: 0;
+}
+
+.timeline {
+	height: 200px;
 }

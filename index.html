@@ -24,7 +24,7 @@
 	  <div class="container-fluid">
 	    <div id="navWrapper">
 	      <ul class="nav navbar-nav">
-	        <li><a href="#">Link</a></li>
+	        
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href=""><i class="fa fa-github fa-3x"></i></a></li>
@@ -60,57 +60,50 @@
 		</div>
 	</div>
 
-	<!-- More -->
+	<!-- Portfolio -->
 	<div class="container-fluid portfolio">
 		<div id="portfolioWrapper">
+			<h1>Portfolio!</h1>
 			<div ng-controller="portfolioCtrl" ng-cloak>
-				
-			  <md-content class="md-padding" layout-xs="column" layout="row">
-			    <div flex-xs flex-gt-xs="50" layout="column">
-			      <md-card>
-			        <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-			        <md-card-title>
-			          <md-card-title-text>
-			            <span class="md-headline">Action buttons</span>
-			          </md-card-title-text>
-			        </md-card-title>
-			        <md-card-content>
-			          <p>
-			            The titles of Washed Out's breakthrough song and the first single from Paracosm...
-			          </p>
-			        </md-card-content>
-			        <md-card-actions layout="row" layout-align="end center">
-			          <md-button>Try It Out</md-button>
-			          <md-button>View Code</md-button>
-			        </md-card-actions>
-			      </md-card>
-			    </div>
+	
+				<div class="portCard firstCard">
+					<img src="/images/pa.png">
+					<h3>My Cool App</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia doloribus reprehenderit enim ipsa!</p>
+					<div class="buttons">
+						<md-button>Try It Out</md-button>
+	          <md-button>View Code</md-button>
+	        </div>
+				</div>
 
-			    <div flex-xs flex-gt-xs="50" layout="column">
-			      <md-card>
-			        <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out">
-			        <md-card-title>
-			          <md-card-title-text>
-			            <span class="md-headline">Action buttons</span>
-			          </md-card-title-text>
-			        </md-card-title>
-			        <md-card-content>
-			          <p>
-			            The titles of Washed Out's breakthrough song and the first single from Paracosm...
-			          </p>
-			        </md-card-content>
-			        <md-card-actions layout="row" layout-align="end center">
-			          <md-button>Try It Out</md-button>
-			          <md-button>View Code</md-button>
-			        </md-card-actions>
-			      </md-card>
-			    </div>
-			  </md-content>
+				<div class="portCard">
+					<img src="/images/pa.png">
+					<h3>My Cool App</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia doloribus reprehenderit enim ipsa!</p>
+					<div class="buttons">
+						<md-button>Try It Out</md-button>
+	          <md-button>View Code</md-button>
+	        </div>
+				</div>
+
+				<div class="portCard">
+					<img src="/images/pa.png">
+					<h3>My Cool App</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia doloribus reprehenderit enim ipsa!</p>
+					<div class="buttons">
+						<md-button>Try It Out</md-button>
+	          <md-button>View Code</md-button>
+	        </div>
+				</div>
 
 			</div>
 		</div>
 	</div>
 
+	<!-- Splash -->
+	<div class="container-fluid timeline">
+		
+	</div>
 
 </body>
 </html>
