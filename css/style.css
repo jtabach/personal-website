@@ -4,13 +4,13 @@
 }
 
 body {
-	background: lightblue;
 	overflow-x: hidden;
 }
 
 .navbar {
 	height: 72px;
 	background: #455A64;
+	border: 0;
 }
 
 #navWrapper {
@@ -36,11 +36,17 @@ body {
 
 .about {
 	background: #CFD8DC;
+	text-align: center;
+	color: #263238;
 }
 
 .about img {
-	margin-top: 100px;
+	margin-top: 40px;
 	width: 360px;
+}
+
+.about h1 {
+	margin-top: 120px;
 }
 
 #aboutWrapper {
@@ -48,7 +54,16 @@ body {
 	margin: 0 auto;
 }
 
-.more {
-	height: 400px;
+.portfolio {
+	margin-top: 40px;
 	background: #ECEFF1;
+}
+
+.portfolio img {
+	height: 300px;
+}
+
+#portfolioWrapper {
+	width: 1024px;
+	margin: 0 auto;
 }
