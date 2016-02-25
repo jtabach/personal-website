@@ -10,13 +10,16 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
 	<script src="/js/module.js"></script>
 
 	<!-- CSS FILES -->
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/animations.css">
 
 </head>
 <body ng-controller="mainCtrl">
@@ -24,15 +27,18 @@
 	  <div class="container-fluid">
 	    <div id="navWrapper">
 	      <ul class="nav navbar-nav">
-	        
+	      	<li><a href="#about" class="snap" du-smooth-scroll>ABOUT</a></li>
+	        <li><a href="#portfolio" class="snap" du-smooth-scroll>PORTFOLIO</a></li>
+	        <li><a href="#portfolioWrapper" class="snap">TIMELINE</a></li>
+	        <li><a href="#portfolioWrapper" class="snap">RESUME</a></li>
+	        <li><a href="#portfolioWrapper" class="snap">CONTACT</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href=""><i class="fa fa-github fa-3x"></i></a></li>
-	        <li><a href=""><i class="fa fa-angellist fa-3x"></i></a></li>
-	        <li><a href=""><i class="fa fa-stack-overflow fa-3x"></i></a></li>
-	        <li><a href=""><i class="fa fa-github fa-3x"></i></a></li>
-	        <li><a href=""><i class="fa fa-twitter fa-3x"></i></a></li>
-	        <li><a href=""><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+	        <li><a href=""><i class="fa fa-github fa-lg"></i></a></li>
+	        <li><a href=""><i class="fa fa-angellist fa-lg"></i></a></li>
+	        <li><a href=""><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+	        <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+	        <li><a href=""><i class="fa fa-linkedin-square fa-lg"></i></a></li>
 	      </ul>
 	    </div>
 	  </div>
@@ -40,28 +46,30 @@
 
 	<!-- Splash -->
 	<div class="container-fluid splash">
-		
+		<!-- <h1><strong>Jeff Tabachnick</strong> is a self-taught Full StacK Developer</h1> -->
 	</div>
 
 	<!-- About -->
-	<div class="container-fluid about">
+	<div class="container-fluid about" id='about'>
 		<div id="aboutWrapper">
 			<div class="row">
 				<div class="col-md-4">
 					<img src="/images/me.png" alt="">
 				</div>
-				<div class="col-md-offset-1 col-md-6">
+
+				<div class="col-md-offset-1 col-md-7 car">
 					<h1>ABOUT ME!</h1>
 					<h3>Lorem ipsum dolor sit amet.</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorem maxime, cumque hic id animi quam natus, quos quo repellendus. Eveniet natus veritatis debitis esse perferendis, officiis deleniti atque labore!</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum illum perspiciatis facilis neque quaerat consequatur?</p>
 				</div>
+
 			</div>
 		</div>
 	</div>
 
 	<!-- Portfolio -->
-	<div class="container-fluid portfolio">
+	<div class="container-fluid portfolio" id="portfolio">
 		<div id="portfolioWrapper">
 			<h1>Portfolio!</h1>
 			<div ng-controller="portfolioCtrl" ng-cloak>
@@ -100,7 +108,7 @@
 		</div>
 	</div>
 
-	<!-- Splash -->
+	<!-- Timeline -->
 	<div class="container-fluid timeline">
 		
 	</div>

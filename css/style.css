@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-	height: 72px;
+	height: 56px;
 	background: #455A64;
 	border: 0;
 }
@@ -18,20 +18,38 @@ body {
 	margin: 0 auto;
 }
 
-.navbar a {
-}
-
-.navbar i {
-	height: 40px;
+.navbar-default .navbar-nav>li>a {
+	font-size: 16px;
+	padding-top: 20px;
 	color: white;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #263238;
+}
+
+.navbar i {
+	color: white;
+}
+
+.navbar i:hover {
+	color: #263238;
+}
+
+
 .splash {
-	background: url('/images/splash3.jpg') no-repeat left 90%;
-	box-shadow: 0px 768px rgba(0, 0, 0, 0.2) inset;
+	background: url('/images/splash7.jpg') no-repeat center 90%;
+	box-shadow: 0px 100vh rgba(0, 0, 0, 0.2) inset;
 	background-size: cover;
-	height: 678px;
-	width: 2200px;
+	height: 100vh;
+	/*height: 678px;*/
+/*	width: 2200px;*/
+}
+
+.splash h1 {
+	color: white;
+	text-align: center;
+	margin-top: 200px;
 }
 
 .about {
@@ -41,12 +59,12 @@ body {
 }
 
 .about img {
-	margin-top: 40px;
+	padding-top: 40px;
 	width: 360px;
 }
 
 .about h1 {
-	margin-top: 120px;
+	padding-top: 120px;
 }
 
 #aboutWrapper {
@@ -55,9 +73,8 @@ body {
 }
 
 .portfolio {
-	margin-top: 40px;
 	background: #ECEFF1;
-	padding: 0;
+	padding: 80px 0 0 0;
 }
 
 .portfolio h1 {
@@ -72,12 +89,14 @@ body {
 #portfolioWrapper {
 	width: 1024px;
 	margin: 0 auto;
+	padding-bottom: 100px
 }
 
 .portCard {
 	width: 330px;
 	margin: 0 0 0 13px;
 	background: white;
+	color: #263238;
 	display: inline-block;
 	border-radius: 2px;
 	box-shadow: 0px 0px 2px 2px #ccc;
@@ -120,4 +139,5 @@ body {
 
 .timeline {
 	height: 200px;
+	background-color: #CFD8DC
 }
