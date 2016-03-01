@@ -5,12 +5,62 @@
 
 body {
 	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+#shortHR {
+	width: 10%;
+	margin: 0 auto;
+}
+
+#longHR {
+	width: 40%;
+	margin: 0 auto;
+}
+
+#name {
+	padding-bottom: 30px
+}
+
+#title {
+	margin: 40px 0;
+}
+
+#downArrow {
+	text-align: center;
+}
+
+#downArrow a {
+	color: orange;
+}
+
+.socialLinks {
+	text-align: center;
+}
+
+.socialLinks li {
+	display: inline-block;
+	padding: 50px 30px;
+}
+
+.socialLinks > li > a {
+	color: white;
 }
 
 .navbar {
 	height: 56px;
-	background: #455A64;
+	background-color: rgba(0, 0, 0, 0);
 	border: 0;
+}
+
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+
+.navbar-nav li {
+	float: none;
+	display: inline-block;
 }
 
 #navWrapper {
@@ -28,6 +78,10 @@ body {
 	color: #263238;
 }
 
+.navbar-default .navbar-nav>li>a:focus {
+	color: white;
+}
+
 .navbar i {
 	color: white;
 }
@@ -38,8 +92,8 @@ body {
 
 
 .splash {
-	background: url('/images/splash7.jpg') no-repeat center 90%;
-	box-shadow: 0px 100vh rgba(0, 0, 0, 0.2) inset;
+	background: url('/images/newsplash.jpeg') no-repeat center 90%;
+	box-shadow: 0px 100vh rgba(0, 0, 0, 0.9) inset;
 	background-size: cover;
 	height: 100vh;
 	/*height: 678px;*/
@@ -49,7 +103,7 @@ body {
 .splash h1 {
 	color: white;
 	text-align: center;
-	margin-top: 200px;
+	margin-top: 30vh;
 }
 
 .about {
