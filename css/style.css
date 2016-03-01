@@ -19,7 +19,8 @@ body {
 }
 
 #name {
-	padding-bottom: 6vh
+	padding-bottom: 6vh;
+	font-size: 50px
 }
 
 #title {
@@ -55,7 +56,7 @@ body {
 
 .navbar {
 	height: 56px;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: #111;
 	border: 0;
 }
 
@@ -70,7 +71,6 @@ body {
 }
 
 #navWrapper {
-	width: 1024px;
 	margin: 0 auto;
 }
 
@@ -96,15 +96,16 @@ body {
 	color: #263238;
 }
 
+.navbar-header button {
+	color: white;
+}
 
 .splash {
-	background: url('/images/newsplash.jpeg') no-repeat center 90%;
+	background: url('/images/newsplash.jpeg') no-repeat center center;
 	box-shadow: 0px 100vh rgba(0, 0, 0, 0.9) inset;
 	background-size: cover;
 	height: 100vh;
 	position: relative;
-	/*height: 678px;*/
-/*	width: 2200px;*/
 }
 
 .splash h1 {
@@ -113,49 +114,79 @@ body {
 	margin-top: 25vh;
 }
 
-.about {
-	background: #CFD8DC;
+#about {
+	padding: 80px 0;
+	background-color: #f9f9f9;
+}
+
+#about h2 {
 	text-align: center;
-	color: #263238;
+	padding-bottom: 80px;
 }
 
 .about img {
-	padding-top: 40px;
-	width: 360px;
+	height: 190px;
+	width: 190px;
+	border: 2px solid #ccc;
+	border-radius: 100%;
+	float: left;
 }
 
-.about h1 {
-	padding-top: 120px;
+.about .about-text {
+	padding-left: 220px;
 }
 
-#aboutWrapper {
-	width: 1024px;
-	margin: 0 auto;
+.about .about-text h1 {
+	margin-top: 0;
+}
+
+.about .about-skills li {
+	padding-bottom: 3px;
+	border-bottom: 2px solid #999;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	list-style: none;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .portfolio {
-	background: #ECEFF1;
+	background-color: #efefef;
 	padding: 80px 0 0 0;
+	text-align: center;
 }
 
-.portfolio h1 {
+.portfolio h2 {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 .portfolio img {
-	height: 200px;
+	height: 150px;
+}
+
+.portfolio-more button {
+	display: inline-block;
+	background-color: #ccc;
+	color: #607D8B;
+	padding: 5px 30px;
+	font-size: 16px;
+	margin: 0 30px 80px 30px;
+	font-weight: bold;
+}
+
+.portfolio-more button:hover {
+	color: #607D8B;
 }
 
 #portfolioWrapper {
-	width: 1024px;
 	margin: 0 auto;
-	padding-bottom: 100px
+	padding-bottom: 60px;
 }
 
 .portCard {
-	width: 330px;
-	margin: 0 0 0 13px;
+	/*width: 220px;*/
+	margin: 0 auto 30px auto;
 	background: white;
 	color: #263238;
 	display: inline-block;
@@ -164,7 +195,7 @@ body {
 }
 
 .portCard img {
-	width: 330px;
+	width: 100%;
 	border-top-right-radius:  2px;
 	border-top-left-radius:  2px;
 }
