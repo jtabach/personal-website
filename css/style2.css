@@ -116,4 +116,87 @@ body {
 	font-weight: bold;
 }
 
+.portfolio {
+	background-color: #efefef;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
 
+.portfolio h2 {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.portfolio-more button {
+	display: inline-block;/*
+	background-color: #ccc;
+	color: #607D8B;
+	padding: 5px 30px;
+	font-size: 16px;*/
+	margin: 0 0 120px 0;
+	/*font-weight: bold;*/
+}
+
+.portCard {
+	width: 100%;
+	background: white;
+	color: #263238;
+	display: inline-block;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 2px #999;
+	margin-bottom: 40px;
+}
+
+.portCard img {
+	width: 100%;
+}
+
+.portCard h3,
+.portCard p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.portCard .buttons {
+	margin-bottom: 10px;
+}
+
+.portCard .md-button {
+	background-color: #607D8B;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.portCard .md-button:hover {
+	background-color: #455A64;
+	color: white;
+}
+
+.contact {
+	background-color: #111;
+	color: white;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.contact h4,
+.contact a {
+	text-align: center;
+	letter-spacing: 2px;
+	color: white;
+	padding: 20px
+}
+
+.contactLinks li {
+	display: inline-block;
+	padding: 50px 3px;
+}
+
+.contactLinks > li > a {
+	color: white;
+}
+
+.contactLinks > li > a:hover {
+	color: #b3f0ff;
+}
