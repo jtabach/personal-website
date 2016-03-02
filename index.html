@@ -2,6 +2,8 @@
 <html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jeff Tabachnick</title>
 
 	<!-- JS FILES -->
@@ -14,6 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
 	<script src="/js/module.js"></script>
+	<script src="/js/main.js"></script>
 
 	<!-- CSS FILES -->
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
@@ -21,7 +24,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/style2.css">
 	<link rel="stylesheet" href="/css/animations.css">
 
 </head>
@@ -29,7 +32,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	  	<div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
@@ -37,31 +40,21 @@
 		      </button>
 		    </div>
 
-
-	    <div id="navWrapper">
-
-				
-
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <!-- <div id="navWrapper"> -->
+				<div class="collapse navbar-collapse" id="myNavBar">
 		      <ul class="nav navbar-nav">
-	          <li><a href="#about" class="snap" du-smooth-scroll>ABOUT</a></li>
-		        <li><a href="#portfolio" class="snap" du-smooth-scroll>PORTFOLIO</a></li>
-		        <li><a href="#portfolioWrapper" class="snap">TIMELINE</a></li>
-		        <li><a href="#portfolioWrapper" class="snap">RESUME</a></li>
-		        <li><a href="#portfolioWrapper" class="snap">CONTACT</a></li>
+	          <li><a href="#about" class="collapseNav" du-smooth-scroll >ABOUT</a></li>
+		        <li><a href="#portfolio" class="collapseNav" du-smooth-scroll>PORTFOLIO</a></li>
+		        <!-- <li><a href="#portfolioWrapper" class="snap">TIMELINE</a></li> -->
+		        <!-- <li><a href="#portfolioWrapper" class="snap">BLOG</a></li> -->
+		        <li><a href="#portfolioWrapper" class="collapseNav" >CONTACT</a></li>
+		        <li><a href="#portfolioWrapper" class="collapseNav" data-toggle="modal" data-target="#myModal">RESUME</a></li>
 		      </ul>
 		    </div>
-
-	      <!-- <ul class="nav navbar-nav">
-	      	<li><a href="#about" class="snap" du-smooth-scroll>ABOUT</a></li>
-	        <li><a href="#portfolio" class="snap" du-smooth-scroll>PORTFOLIO</a></li>
-	        <li><a href="#portfolioWrapper" class="snap">TIMELINE</a></li>
-	        <li><a href="#portfolioWrapper" class="snap">RESUME</a></li>
-	        <li><a href="#portfolioWrapper" class="snap">CONTACT</a></li>
-	      </ul> -->
-	    </div>
+	    <!-- </div> -->
 	  </div>
 	</nav>
+
 
 	<!-- Splash -->
 	<div class="container-fluid splash">
@@ -73,11 +66,11 @@
 		<h1 id="title">Full Stack JavaScript Developer</h1>
 		<hr id="longHR">
 		<ul class="socialLinks">
-      <li><a href=""><i class="fa fa-github fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-angellist fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-stack-overflow fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-      <li><a href=""><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+      <li><a href="https://github.com/jtabach" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+      <li><a href="https://angel.co/jtabach" target="_blank"><i class="fa fa-angellist fa-2x"></i></a></li>
+      <li><a href="http://stackoverflow.com/users/5704651/jeff-tabachnick" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/Jeff_Tabachnick" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/jefftabachnick" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
     </ul>
     
 	</div>
@@ -90,7 +83,7 @@
 					<h2>ABOUT ME</h2>
 					<div class="row">
 						<div class="col-xs-12 col-sm-8">
-							<img src="/images/me.png" alt="">
+							<!-- <img src="/images/me.png" alt=""> -->
 							<div class="about-text">
 								<h1>Hello, I'm Jeff</h1>
 								<h3>Full Stack JavaScript Developer</h3>
@@ -125,7 +118,7 @@
 						<div class="row">
 							<div class="col-lg-4 col-md-6">
 								<div class="portCard">
-									<img src="/images/pa.png">
+									<!-- <img src="/images/pa.png"> -->
 									<h3>My Cool App</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia doloribus reprehenderit enim ipsa!</p>
 									<div class="buttons">
@@ -136,7 +129,7 @@
 							</div>
 							<div class="col-lg-4 col-md-6">
 								<div class="portCard">
-									<img src="/images/pa.png">
+									<!-- <img src="/images/pa.png"> -->
 									<h3>My Cool App</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia doloribus reprehenderit enim ipsa!</p>
 									<div class="buttons">
@@ -147,7 +140,7 @@
 							</div>
 							<div class="col-lg-4 col-md-6">
 								<div class="portCard">
-									<img src="/images/pa.png">
+									<!-- <img src="/images/pa.png"> -->
 									<h3>My Cool App</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia doloribus reprehenderit enim ipsa!</p>
 									<div class="buttons">
@@ -161,7 +154,7 @@
 				</div>
 				<div class="row">
 					<div class="portfolio-more">
-						<md-button>SHOW ME MORE</md-button>
+						<a href="https://github.com/jtabach?tab=repositories" target="_blank"><md-button>SHOW ME MORE</md-button></a>
 						<md-button>FULL RESUME</md-button>
 					</div>
 				</div>
@@ -170,9 +163,36 @@
 	</div>
 
 	<!-- Timeline -->
-	<div class="container-fluid timeline">
-		
+	<div class="container-fluid contact">
+		<h4>Jeff Tabachnick</h4>
+		<a href="mailto:jeff.n.tabachnick@gmail.com">jeff.n.tabachnick@gmail.com</a>
+		<ul class="contactLinks">
+      <li><a href="https://github.com/jtabach" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+      <li><a href="https://angel.co/jtabach" target="_blank"><i class="fa fa-angellist fa-2x"></i></a></li>
+      <li><a href="http://stackoverflow.com/users/5704651/jeff-tabachnick" target="_blank"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/Jeff_Tabachnick" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/jefftabachnick" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+    </ul>
 	</div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="/images/Jeff-Tabachnick-Resume.pdf" width="100%" height="500"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
