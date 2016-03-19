@@ -21,6 +21,10 @@ body {
 	color: white;
 }
 
+.splashWrapper {
+	position: relative;
+	top: 20vh;
+}
 
 #shortHR {
 	width: 10%;
@@ -34,14 +38,15 @@ body {
 }
 
 #name {
-	padding: 25vh 0 5vh;
+	padding: 0 0 5vh 0;
 	/*padding: 25% 0 5% 0;*/
-	font-size: 9vw;
+	font-size: 8vh;
+	letter-spacing: 5px;
 }
 
 #title {
 	padding: 5vh;
-	font-size: 4vw;
+	font-size: 4vh;
 }
 
 #downArrow {
@@ -52,16 +57,17 @@ body {
 
 #downArrow a {
 	color: orange;
+	font-size: 2vh;
 }
 
 .socialLinks {
 	text-align: center;
-	font-size: 3vw;
+	font-size: 3vh;
 }
 
 .socialLinks li {
 	display: inline-block;
-	padding: 6% 3%;
+	padding: 4vh 3%;
 }
 
 .socialLinks > li > a {
@@ -199,4 +205,19 @@ body {
 
 .contactLinks > li > a:hover {
 	color: #b3f0ff;
+}
+
+a.timeline-Footer.u-cf {
+	display: none !important;
+}
+
+#blog {
+	padding: 10% 0 15% 0;
+	background-color: #f9f9f9;
+}
+
+
+#blog h2 {
+	text-align: center;
+	padding-bottom: 8%;
 }
