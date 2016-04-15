@@ -212,7 +212,7 @@ a.timeline-Footer.u-cf {
 }
 
 #blog {
-	padding: 10% 0 15% 0;
+	padding: 80px 0 80px 0;
 	background-color: #f9f9f9;
 }
 
@@ -220,4 +220,19 @@ a.timeline-Footer.u-cf {
 #blog h2 {
 	text-align: center;
 	padding-bottom: 8%;
+}
+
+.embedly-card {
+	background-color: white;
+	height: 400px;
+	margin-top: -5px;
+	border-radius: 2px;
+}
+
+.embedly-card-hug {
+	height: 360px;
+}
+
+.fullresume {
+	display: inline-block;
 }

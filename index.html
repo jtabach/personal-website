@@ -15,6 +15,7 @@
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
+  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 	<script src="/js/module.js"></script>
 	<script src="/js/main.js"></script>
 
@@ -48,7 +49,7 @@
 		        <!-- <li><a href="#portfolioWrapper" class="snap">TIMELINE</a></li> -->
 		        <li><a href="#blog" class="snap" du-smooth-scroll>BLOG</a></li>
 		        <li><a href="#contact" class="collapseNav" du-smooth-scroll>CONTACT</a></li>
-		        <li><a href="#portfolioWrapper" class="collapseNav" data-toggle="modal" data-target="#myModal">RESUME</a></li>
+		        <li><a href="#resume" class="collapseNav" data-toggle="modal" data-target="#myModal">RESUME</a></li>
 		      </ul>
 		    </div>
 	    <!-- </div> -->
@@ -91,8 +92,14 @@
 								<div class="about-text col-sm-8 col-xs-12">
 									<h1>Hello, I'm Jeff</h1>
 									<h3>Full Stack JavaScript Developer</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorem maxime, cumque hic id animi quam natus, quos quo repellendus. Eveniet natus veritatis debitis esse perferendis, officiis deleniti atque labore!</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum illum perspiciatis facilis neque quaerat consequatur?</p>
+									<p>I have experience creating RESTful APIs, modularizing code with organized file structures, handling git workflows and merge conflicts, and writing readable, reusable code.</p>
+									<p>Through my background in Architectural Engineering I have been able to use my math and design skills to create functional, easy-to-use, and aesthetically pleasing web applications. </p>
+									<p>I am always looking for newer, more challenging technologies to include in my side projects (most recently React/Redux).</p>
+									<p>When I’m not hacking away on one of my side projects, you can find me watching sports, working out, or playing hockey.</p>
+									<p>Whether you are looking to add a passionate developer to your team or just talk sports, I would love to hear from you.</p>
+									<div class="text-center">
+										<a href="mailto:jeff.n.tabachnick@gmail.com"><md-button>GET IN TOUCH</md-button></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -100,10 +107,14 @@
 							<ul class="about-skills">
 								<li>JavaScript</li>
 								<li>React.js</li>
+								<li>Redux</li>
 								<li>AngularJS</li>
 								<li>Node.js</li>
 								<li>MongoDB</li>
 								<li>Express.js</li>
+								<li>JQuery</li>
+								<li>HTML/CSS</li>
+								<li>Bootstrap</li>
 							</ul>
 						</div>
 					</div>
@@ -162,22 +173,19 @@
 					<h2>BLOG</h2>
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 col-md-6"> 
-							<div class="row">
-								<a class="twitter-timeline" href="https://twitter.com/Jeff_Tabachnick" data-widget-id="711031216007348225">Tweets by @Jeff_Tabachnick</a>
-							</div>
+							<a class="embedly-card" href="https://medium.com/@jtabach/reactjs-inverse-data-flow-in-es6-9d1c3c356be7#.3t300se3k">ReactJS Inverse Data Flow in ES6</a>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6"> 
-							<div class="row">
-								<a class="twitter-timeline" href="https://twitter.com/Jeff_Tabachnick" data-widget-id="711031216007348225">Tweets by @Jeff_Tabachnick</a>
-							</div>
+							<a class="twitter-timeline" href="https://twitter.com/Jeff_Tabachnick" data-widget-id="711031216007348225">Tweets by @Jeff_Tabachnick</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<md-button>FULL RESUME</md-button>
+	<div class="text-center">
+		<md-button class="fullresume" data-toggle="modal" data-target="#myModal">FULL RESUME</md-button>
+	</div>
 
 	<!-- Timeline -->
 	<div class="container-fluid contact" id="contact">
