@@ -9,7 +9,7 @@ body {
 }
 
 .splash {
-	background: url('/images/newsplash.jpeg') no-repeat center center;
+	background: url('/personal-website/images/newsplash.jpeg') no-repeat center center;
 	box-shadow: 0px 100vh rgba(0, 0, 0, 0.7) inset;
 	background-size: cover;
 	height: 100vh;
